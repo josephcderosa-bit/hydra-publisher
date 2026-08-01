@@ -9,7 +9,7 @@
     :root{color-scheme:dark;--bg:#08111f;--panel:#111d2e;--text:#f5f7fb;--muted:#aab7c8;--accent:#57d7ff;--accent2:#8d7cff;--border:rgba(255,255,255,.11)}
     *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;background:radial-gradient(circle at 15% 0,rgba(87,215,255,.14),transparent 30rem),radial-gradient(circle at 90% 20%,rgba(141,124,255,.13),transparent 28rem),var(--bg);color:var(--text);line-height:1.6}
     a{color:var(--accent);text-underline-offset:3px}.wrap{width:min(1080px,calc(100% - 40px));margin:auto}header{display:flex;justify-content:space-between;align-items:center;gap:20px;padding:26px 0}.brand{display:flex;align-items:center;gap:11px;color:var(--text);text-decoration:none;font-weight:800}.mark{display:grid;place-items:center;width:34px;height:34px;border:1px solid var(--border);border-radius:10px;background:linear-gradient(135deg,rgba(87,215,255,.25),rgba(141,124,255,.25))}nav{display:flex;gap:18px;flex-wrap:wrap}nav a{color:var(--muted);text-decoration:none}nav a:hover{color:var(--text)}
-    .hero{text-align:center;padding:82px 0 56px}.tag{display:inline-block;padding:7px 12px;border:1px solid var(--border);border-radius:999px;background:rgba(255,255,255,.04);color:var(--muted);font-size:.9rem}h1{max-width:850px;margin:18px auto 0;font-size:clamp(2.8rem,8vw,5.5rem);line-height:.98;letter-spacing:-.055em}.grad{background:linear-gradient(90deg,var(--accent),var(--accent2));-webkit-background-clip:text;background-clip:text;color:transparent}.hero p{max-width:760px;margin:24px auto 0;color:var(--muted);font-size:clamp(1.05rem,2vw,1.24rem)}.actions{display:flex;justify-content:center;gap:14px;flex-wrap:wrap;margin-top:30px}.btn{display:inline-flex;align-items:center;justify-content:center;min-height:46px;padding:0 18px;border:1px solid var(--border);border-radius:12px;text-decoration:none;font-weight:750}.primary{background:linear-gradient(135deg,var(--accent),var(--accent2));color:#07111c;border:0}.secondary{background:rgba(255,255,255,.04);color:var(--text)}
+    .hero{text-align:center;padding:82px 0 56px}.tag{display:inline-block;padding:7px 12px;border:1px solid var(--border);border-radius:999px;background:rgba(255,255,255,.04);color:var(--muted);font-size:.9rem}h1{max-width:850px;margin:18px auto 0;font-size:clamp(2.8rem,8vw,5.5rem);line-height:.98;letter-spacing:-.055em}.grad{background:linear-gradient(90deg,var(--accent),var(--accent2));-webkit-background-clip:text;background-clip:text;color:transparent}.hero p{max-width:760px;margin:24px auto 0;color:var(--muted);font-size:clamp(1.05rem,2vw,1.24rem)}.actions{display:flex;justify-content:center;gap:14px;flex-wrap:wrap;margin-top:30px}.btn{display:inline-flex;align-items:center;justify-content:center;min-height:46px;padding:0 18px;border:1px solid var(--border);border-radius:12px;text-decoration:none;font-weight:750}.primary{background:linear-gradient(135deg,var(--accent),var(--accent2));color:#07111c;border:0}.secondary{background:rgba(255,255,255,.04);color:var(--text)}.tiktok-button{background:linear-gradient(135deg,rgba(37,244,238,.16),rgba(254,44,85,.16));border-color:rgba(255,255,255,.2)}
     section{padding:44px 0}.heading{max-width:680px;margin-bottom:24px}.heading h2,.approval h2,.contact h2{margin:0 0 10px;font-size:clamp(1.9rem,4vw,2.6rem);letter-spacing:-.035em}.heading p,.approval p,.contact p,.card p{margin:0;color:var(--muted)}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}.card{padding:24px;border:1px solid var(--border);border-radius:18px;background:linear-gradient(180deg,rgba(255,255,255,.035),rgba(255,255,255,.018)),var(--panel);box-shadow:0 22px 60px rgba(0,0,0,.26)}.num{display:grid;place-items:center;width:34px;height:34px;margin-bottom:15px;border-radius:10px;background:rgba(255,255,255,.05);color:var(--accent);font-weight:800}.card h3{margin:0 0 8px}.approval{display:grid;grid-template-columns:1.1fr .9fr;gap:24px;align-items:center;padding:30px;border:1px solid var(--border);border-radius:20px;background:linear-gradient(135deg,rgba(87,215,255,.08),rgba(141,124,255,.08)),var(--panel)}.approval ul{list-style:none;margin:0;padding:0}.approval li{position:relative;margin:10px 0;padding-left:26px}.approval li:before{content:"✓";position:absolute;left:0;color:var(--accent);font-weight:900}.contact{text-align:center;padding:68px 0 62px}.contact p{max-width:640px;margin:0 auto 24px}footer{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;padding:28px 0 40px;border-top:1px solid var(--border);color:var(--muted);font-size:.92rem}.links{display:flex;gap:18px;flex-wrap:wrap}
     @media(max-width:760px){header{align-items:flex-start;flex-direction:column}.hero{padding-top:56px}.grid,.approval{grid-template-columns:1fr}}
   </style>
@@ -18,7 +18,7 @@
   <div class="wrap">
     <header>
       <a class="brand" href="index.html"><span class="mark">H</span><span>Hydra Publisher</span></a>
-      <nav><a href="#how">How it works</a><a href="#approval">User approval</a><a href="#contact">Contact</a></nav>
+      <nav><a href="#how">How it works</a><a href="tiktok-integration.html">TikTok integration</a><a href="#approval">User approval</a><a href="#contact">Contact</a></nav>
     </header>
 
     <main>
@@ -26,7 +26,11 @@
         <span class="tag">Creator-controlled short-form publishing</span>
         <h1>Prepare, review, and transfer <span class="grad">original short-form videos.</span></h1>
         <p>Hydra Publisher helps creators organize their content workflow, prepare original vertical videos, and transfer approved videos to supported publishing platforms while keeping the creator in control.</p>
-        <div class="actions"><a class="btn primary" href="#how">See how it works</a><a class="btn secondary" href="#contact">Contact the developer</a></div>
+        <div class="actions">
+          <a class="btn primary" href="#how">See how it works</a>
+          <a class="btn secondary tiktok-button" href="tiktok-integration.html">View TikTok Integration</a>
+          <a class="btn secondary" href="#contact">Contact the developer</a>
+        </div>
       </section>
 
       <section id="how">
@@ -37,6 +41,30 @@
           <article class="card"><div class="num">3</div><h3>Transfer approved content</h3><p>Once approved, Hydra Publisher can transfer the creator’s original video and associated metadata to supported platform workflows.</p></article>
           <article class="card"><div class="num">4</div><h3>Finish inside TikTok</h3><p>TikTok uploads enter the creator’s TikTok inbox so the creator can edit the video, choose native audio, review the post, and publish it from TikTok.</p></article>
         </div>
+      </section>
+
+      <section id="tiktok">
+        <div class="approval">
+          <div>
+            <h2>TikTok product and scope use</h2>
+            <p>
+              Hydra Publisher uses TikTok Login Kit and the Content Posting API
+              only after a creator connects their own account and explicitly
+              approves a video transfer.
+            </p>
+          </div>
+          <ul>
+            <li>Login Kit provides creator-controlled TikTok authorization.</li>
+            <li>Approved videos are uploaded as drafts, not directly published.</li>
+            <li>The creator finishes editing and publication inside TikTok.</li>
+            <li>Only the minimum required scopes are requested.</li>
+          </ul>
+        </div>
+        <p style="margin-top:18px">
+          <a class="btn secondary" href="tiktok-integration.html">
+            Read the complete TikTok integration and scope explanation
+          </a>
+        </p>
       </section>
 
       <section id="approval">
@@ -50,13 +78,13 @@
         <h2>Contact the developer</h2>
         <p>Questions about Hydra Publisher, data use, or the publishing workflow can be sent directly to the developer.</p>
         <!-- Replace CONTACT_EMAIL_HERE with your real developer email address before publishing. -->
-        <a class="btn primary" href="mailto:earthunlisted.media@gmail.com">Email the developer</a>
+        <a class="btn primary" href="mailto:CONTACT_EMAIL_HERE">Email the developer</a>
       </section>
     </main>
 
     <footer>
       <span>&copy; 2026 Hydra Publisher. All rights reserved.</span>
-      <div class="links"><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Service</a></div>
+      <div class="links"><a href="tiktok-integration.html">TikTok Integration</a><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Service</a></div>
     </footer>
   </div>
 </body>
